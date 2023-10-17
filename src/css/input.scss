@@ -1,0 +1,25 @@
+@import "variables";
+
+.input {
+  border: none;
+  width: 400px;
+  height: 60px;
+  padding-left: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: $textColor;
+  background-color: $secondaryColor;
+
+  &::placeholder {
+    color: $textColor;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}

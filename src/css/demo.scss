@@ -1,0 +1,21 @@
+@import "variables";
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $secondaryColor;
+
+  .demoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    max-width: 550px;
+    padding: 40px;
+    background-color: $backgroundColor;
+  }
+}

@@ -1,0 +1,106 @@
+@import "variables";
+
+.signIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $secondaryColor;
+
+  .signInContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    max-width: 500px;
+    gap: 50px;
+    width: 100%;
+    padding: 50px;
+    background-color: $backgroundColor;
+
+    .signInText {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        font-size: 50px;
+        line-height: 1.1;
+        color: $textColor;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $textColor;
+      }
+    }
+
+    .signInForm {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 30px;
+      width: 100%;
+      gap: 20px;
+
+      .signInEmail,
+      .signInPassword {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+
+        input {
+          border: none;
+          border-radius: 10px;
+          height: 40px;
+          width: 100%;
+          padding-left: 20px;
+          color: $backgroundColor;
+          background-color: $textColor;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        label {
+          color: $textColor;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+        background-color: $accentColor;
+        color: $textColor;
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+
+      p {
+        display: flex;
+        gap: 10px;
+        color: $textColor;
+
+        a {
+          color: $accentColor;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}

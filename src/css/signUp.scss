@@ -1,0 +1,111 @@
+@import "variables";
+
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $backgroundColor;
+
+    .signUpContainer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $secondaryColor;
+      max-width: 500px;
+      padding: 50px 60px;
+      border-radius: 30px;
+
+      .signUpText {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+          text-align: center;
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 1.1;
+          color: $textColor;
+        }
+
+        h4 {
+          font-size: 20px;
+          font-weight: 400;
+          color: $textColor;
+        }
+      }
+
+      .signUpForm {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+        width: 100%;
+
+        .signUpEmail,
+        .signUpPassword {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          width: 100%;
+
+          input {
+            border: none;
+            border-radius: 10px;
+            height: 40px;
+            width: 100%;
+            padding-left: 20px;
+            color: $backgroundColor;
+            background-color: $textColor;
+            &:focus {
+              outline: none;
+            }
+          }
+
+          label {
+            color: $textColor;
+          }
+        }
+        button {
+          cursor: pointer;
+          border: none;
+          width: 100%;
+          height: 50px;
+          margin-top: 10px;
+          border-radius: 20px;
+          transition: 0.3s ease-in-out;
+          background-color: $accentColor;
+          color: $textColor;
+          &:hover {
+            background-color: $primaryColor;
+          }
+        }
+
+        p {
+          display: flex;
+          gap: 10px;
+          color: $textColor;
+
+          a {
+            color: $accentColor;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              color: $primaryColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
